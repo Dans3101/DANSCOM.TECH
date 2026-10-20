@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Mode — DANSCOM | Daniel Musembi</title>
+  <meta name="description" content="You are currently offline. You can continue reading cached pages or reconnect when internet access is restored.">
+  <meta name="robots" content="noindex">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg">
+  <meta name="theme-color" content="#080c14">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="./index.html" class="brand-link" aria-label="DANSCOM Home">
+        <span class="brand-badge">D</span>
+        <div class="brand-name">
+          <span class="brand-title">DANSCOM</span>
+          <span class="brand-owner">Daniel Musembi</span>
+        </div>
+      </a>
+      <div style="font-size: 0.8rem; font-weight: 600; color: #f59e0b; display: flex; align-items: center; gap: 6px;">
+        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #f59e0b;"></span>
+        Offline
+      </div>
+    </div>
+  </header>
+
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 20px;">
+    <div class="container container-narrow text-center" style="text-align: center;">
+      <div style="width: 72px; height: 72px; margin: 0 auto 24px; border-radius: 50%; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); display: flex; align-items: center; justify-content: center; color: #f59e0b;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+      </div>
+
+      <h1 class="section-title" style="font-size: 2rem; margin-bottom: 14px;">You Are Currently Offline</h1>
+      <p class="section-description" style="max-width: 540px; margin: 0 auto 28px;">
+        Your internet connection seems to be interrupted. DANSCOM is equipped with Progressive Web App offline caching, so previously viewed pages remain accessible.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 36px;">
+        <button onclick="window.location.reload()" class="btn btn-primary btn-md">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+          Try Reconnecting
+        </button>
+        <a href="./index.html" class="btn btn-secondary btn-md">Return to Home</a>
+      </div>
+
+      <div class="card" style="max-width: 480px; margin: 0 auto; text-align: left; padding: 20px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-cyan); margin-bottom: 8px;">Explore Cached Pages:</div>
+        <ul style="font-size: 0.875rem; color: var(--text-secondary); margin-left: 20px; line-height: 1.8;">
+          <li><a href="./about.html" style="color: inherit;">About Daniel Musembi</a></li>
+          <li><a href="./services.html" style="color: inherit;">Services Directory</a></li>
+          <li><a href="./virtual-assistant.html" style="color: inherit;">Virtual Assistant Services</a></li>
+          <li><a href="./trading-technology.html" style="color: inherit;">Trading Technology Research</a></li>
+          <li><a href="./blog.html" style="color: inherit;">Articles & Guides</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>&copy; 2026 DANSCOM. Daniel Musembi. Built for free GitHub Pages static hosting.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

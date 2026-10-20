@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANSCOM — Daniel Musembi | Digital Support, Intelligent Automation & Practical Technology</title>
+  <meta name="description" content="Official portfolio and digital services platform for DANSCOM, representing Daniel Musembi. Executive virtual assistance, AI workflow automation, responsive web development, research, and algorithmic trading technology experiments.">
+  <meta name="keywords" content="Daniel Musembi, DANSCOM, Virtual Assistant, AI Automation, Web Developer, Kenya VA, Real Estate VA, Algorithmic Trading, Criminology Researcher, GitHub Pages PWA">
+  <meta name="author" content="Daniel Musembi">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danielmusembi.github.io/danscom-portfolio/">
+  <meta property="og:title" content="DANSCOM — Daniel Musembi | Digital Support & Intelligent Automation">
+  <meta property="og:description" content="Precision virtual assistance, automated business workflows, frontend development, and quantitative trading technology research.">
+  <meta property="og:image" content="./assets/icons/icon-512.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DANSCOM — Daniel Musembi | Digital Support & Technology">
+  <meta name="twitter:description" content="Precision virtual assistance, AI workflows, web development, and trading technology research.">
+  <meta name="twitter:image" content="./assets/icons/icon-512.svg">
+
+  <!-- PWA Manifest & Favicons -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg">
+  <meta name="theme-color" content="#080c14">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Musembi",
+    "alternateName": "DANSCOM",
+    "jobTitle": "Virtual Assistant & Technology Builder",
+    "email": "musembidaniel615@gmail.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Maasai Mara University",
+      "award": "Bachelor of Arts in Criminology and Penology (2019–2023)"
+    },
+    "knowsAbout": [
+      "Virtual Assistance",
+      "AI Workflow Automation",
+      "Frontend Web Development",
+      "Trading Technology & Pine Script",
+      "Investigative Online Research"
+    ],
+    "description": "Founder of DANSCOM, providing high-precision virtual assistance, intelligent business workflows, web development, and research."
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="./index.html" class="brand-link" aria-label="DANSCOM Home">
+        <span class="brand-badge">D</span>
+        <div class="brand-name">
+          <span class="brand-title">DANSCOM</span>
+          <span class="brand-owner">Daniel Musembi</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./trading-technology.html">Trading Tech</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm pwa-install-btn" style="display: none;" aria-label="Install App">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Install</span>
+        </button>
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="btn-icon mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <a href="./contact.html" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 860px){display:inline-flex;}">Hire Daniel</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-backdrop"></div>
+    <div class="mobile-drawer-panel">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <span class="brand-badge">D</span>
+          <div class="brand-name">
+            <span class="brand-title">DANSCOM</span>
+            <span class="brand-owner">Daniel Musembi</span>
+          </div>
+        </div>
+        <button class="btn-icon mobile-drawer-close" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <nav class="drawer-links">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./about.html">About Daniel</a>
+        <a href="./services.html">All Services</a>
+        <a href="./virtual-assistant.html">Virtual Assistance</a>
+        <a href="./ai-automation.html">AI Automation</a>
+        <a href="./development.html">Web Development</a>
+        <a href="./trading-technology.html">Trading Technology</a>
+        <a href="./writing-research.html">Writing & Research</a>
+        <a href="./projects.html">Projects Portfolio</a>
+        <a href="./blog.html">Articles & Insights</a>
+        <a href="./contact.html">Contact / Hire</a>
+      </nav>
+
+      <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+        <a href="./contact.html" class="btn btn-primary w-full" style="width: 100%; margin-bottom: 12px;">Start a Conversation</a>
+        <p style="font-size: 0.775rem; color: var(--text-muted); text-align: center;">musembidaniel615@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="badge badge-dev">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              Available for Global Engagements & Long-Term Retainers
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Digital Support. <br>
+            <span class="gradient-text">Intelligent Automation.</span> <br>
+            Practical Technology.
+          </h1>
+
+          <p class="hero-desc">
+            DANSCOM unites high-precision virtual assistance, AI-assisted business workflows, responsive web development, investigative research, and quantitative trading technology experiments. Engineered for executives, real estate brokers, and modern businesses seeking reliable, structured execution.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="./contact.html" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Work With Me
+            </a>
+            <a href="./services.html" class="btn btn-secondary btn-lg">Explore My Services</a>
+            <a href="./projects.html" class="btn btn-outline btn-lg">View Projects</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>100% Verified Credentials</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>EAT Timezone (Flexible for US/EU)</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Zero-Fluff Execution</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verified Profile Identity Card -->
+        <div class="hero-profile">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar-box">
+                <img src="./assets/images/profile-placeholder.svg" alt="Daniel Musembi Profile Avatar" class="profile-avatar-img">
+              </div>
+              <div>
+                <h2 class="profile-name">Daniel Musembi</h2>
+                <div class="profile-role">Founder, DANSCOM</div>
+                <div class="profile-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  Nairobi, Kenya • Remote Globally
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-education">
+              <div class="edu-tag">Academic Foundation</div>
+              <div class="edu-degree">Bachelor of Arts in Criminology & Penology</div>
+              <div class="edu-school">Maasai Mara University (2019 – 2023)</div>
+            </div>
+
+            <ul class="profile-highlights">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Investigative Rigor:</strong> Academic criminology background provides high-integrity data hygiene, compliance scrutiny, and OSINT capability.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Applied Automation:</strong> Designs practical human-in-the-loop AI workflows that eliminate repetitive admin overhead.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Transparent Ethos:</strong> Strict honesty policy—no fabricated metrics, fake testimonials, or unrealistic profit claims.</span>
+              </li>
+            </ul>
+
+            <div class="profile-actions">
+              <a href="./about.html" class="btn btn-secondary btn-sm" style="flex: 1;">Full Biography</a>
+              <a href="./contact.html" class="btn btn-primary btn-sm" style="flex: 1;">Contact Daniel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">What I Do</div>
+          <h2 class="section-title">Core Capability Pillars</h2>
+          <p class="section-description">
+            Combining structured administrative precision with modern digital tooling to streamline operations, build online assets, and research technical systems.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- VA Card -->
+          <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3 class="card-title">Virtual Assistance</h3>
+            <p class="card-desc">
+              Executive inbox triage, calendar scheduling, data entry, CRM hygiene, document preparation, and dedicated transaction coordination for real estate brokers and e-commerce operators.
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Email & Calendar Inbox Zero Protocols</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Real Estate MLS & Listing Coordination</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Accuracy Spreadsheet Management</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-dev">Hourly & Retainer</span>
+              <a href="./virtual-assistant.html" class="card-link">Explore VA &rarr;</a>
+            </div>
+          </article>
+
+          <!-- AI Automation Card -->
+          <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path></svg>
+            </div>
+            <h3 class="card-title">AI-Assisted Automation</h3>
+            <p class="card-desc">
+              Designing pragmatic automation pipelines: structured LLM prompt workflows, document summarization, webhook triggers, and inquiry classification with human-in-the-loop safety.
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated Lead Scoring & Intake Pipelines</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Prompt Architectures & Synthesis</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Clear API Feasibility Assessments</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-dev">Workflow Audits</span>
+              <a href="./ai-automation.html" class="card-link">Explore AI &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Web Dev Card -->
+          <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="card-title">Web Development & PWA</h3>
+            <p class="card-desc">
+              Building ultra-fast, zero-maintenance static websites, landing pages, and Progressive Web Apps hosted free on GitHub Pages. No database vulnerabilities, sub-second performance.
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> GitHub Pages Zero-Cost Hosting Architecture</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> PWA Offline Caching & Mobile Installability</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Clean Semantic HTML5 & Modern CSS3</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-live">Production-Ready</span>
+              <a href="./development.html" class="card-link">Explore Web Dev &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Trading Tech Card -->
+          <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <h3 class="card-title">Trading Technology Prototypes</h3>
+            <p class="card-desc">
+              Personal research in quantitative and algorithmic systems: DANSCOMFX risk-management logic, Deriv WebSocket API execution bot experiments, and Pine Script indicators.
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Strict Mathematical Risk Parameters (1% Cap)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> WebSocket Tick Data Processing Engine</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Non-Commercial Research & Disclaimers</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-proto">Technical Research</span>
+              <a href="./trading-technology.html" class="card-link">Explore Trading &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Writing & Research Card -->
+          <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3 class="card-title">Writing & Investigative Research</h3>
+            <p class="card-desc">
+              Applying university criminological and penological inquiry techniques to market intelligence: competitive analysis, documentation drafting, article rewriting, and executive briefings.
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Open-Source Intelligence (OSINT) Verification</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Technical & Operational Documentation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Signal Executive Decision Briefs</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-dev">Bespoke Research</span>
+              <a href="./writing-research.html" class="card-link">Explore Research &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Custom Solutions Card -->
+          <article class="card" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(99, 102, 241, 0.08)); border-color: var(--border-glow);">
+            <div class="card-icon" style="background: var(--accent-gradient); color: #080c14;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="card-title">Custom Multi-Disciplinary Retainers</h3>
+            <p class="card-desc">
+              Need a trusted hybrid partner who can manage your executive operations in the morning, build landing pages in the afternoon, and research market opportunities?
+            </p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Monthly Hourly Packages</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Daily Asynchronous Status Reports</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Strict NDA & Data Privacy Adherence</li>
+            </ul>
+            <div class="card-footer">
+              <span class="badge badge-live">Tailored Engagement</span>
+              <a href="./contact.html" class="card-link">Discuss Retainer &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
+          <div>
+            <div class="section-subtitle">Verified Work & Experiments</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description" style="max-width: 600px;">
+              Live websites, algorithmic trading prototypes, and automation architectures. Clearly marked statuses with no fabricated metrics.
+            </p>
+          </div>
+          <a href="./projects.html" class="btn btn-secondary">Browse All Projects &rarr;</a>
+        </div>
+
+        <div id="featuredProjectsGrid" class="cards-grid">
+          <!-- Populated dynamically by assets/js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Work (Process) Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">Methodology</div>
+          <h2 class="section-title">How I Deliver Results</h2>
+          <p class="section-description">
+            A structured four-phase workflow designed for clarity, accountability, and predictable execution.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Inquiry & Scope Alignment</h3>
+            <p class="step-desc">
+              We define exact deliverables, communication cadence, tool stack, and realistic turnaround times. No ambiguous assumptions.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <h3 class="step-title">System & SOP Setup</h3>
+            <p class="step-desc">
+              Standard Operating Procedures (SOPs), access permissions, templates, and automated workflows are configured with strict security hygiene.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Focused Execution & Check-ins</h3>
+            <p class="step-desc">
+              Daily or weekly milestone check-ins with transparent time tracking, versioned commits, or organized spreadsheets for complete visibility.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Handoff & Continuous Refinement</h3>
+            <p class="step-desc">
+              Clean deliverables provided with full documentation. For ongoing retainers, we continually optimize processes to compound time savings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Articles Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
+          <div>
+            <div class="section-subtitle">Actionable Insights</div>
+            <h2 class="section-title">Selected Articles & Guides</h2>
+            <p class="section-description" style="max-width: 600px;">
+              Practical analyses on virtual assistance delegation, pragmatic AI workflows, zero-maintenance static architecture, and online research methodology.
+            </p>
+          </div>
+          <a href="./blog.html" class="btn btn-secondary">Explore All Guides &rarr;</a>
+        </div>
+
+        <div id="featuredBlogGrid" class="cards-grid">
+          <!-- Populated dynamically by assets/js/blog.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project Details">
+      <div class="modal-box">
+        <button class="modal-close" onclick="window.closeProjectModal()" aria-label="Close modal">&times;</button>
+        <div id="projectModalBody"></div>
+      </div>
+    </div>
+
+    <!-- Lead Generation CTA Section -->
+    <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.12), transparent 70%);">
+      <div class="container container-narrow text-center" style="text-align: center;">
+        <span class="badge badge-dev" style="margin-bottom: 16px;">Direct Engagement</span>
+        <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 2.8rem);">
+          Ready to Bring Order & Automation to Your Operations?
+        </h2>
+        <p class="section-description" style="margin-bottom: 32px;">
+          Whether you need an executive virtual assistant to free up 20+ hours a week, a custom static website deployed to GitHub Pages, or an AI workflow built for your team, let’s talk.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;">
+          <a href="./contact.html" class="btn btn-primary btn-lg">
+            Send an Inquiry to Daniel
+          </a>
+          <button id="copyEmailQuickBtn" class="btn btn-secondary btn-lg" onclick="navigator.clipboard.writeText('musembidaniel615@gmail.com'); window.showToast('Copied musembidaniel615@gmail.com to clipboard!');">
+            Copy Email Address
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Offline Connectivity Banner -->
+  <div class="offline-banner" id="offlineBanner" role="status">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+    <span>Offline Mode Active — Browsing cached pages</span>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link" style="margin-bottom: 12px;">
+            <span class="brand-badge">D</span>
+            <div class="brand-name">
+              <span class="brand-title">DANSCOM</span>
+              <span class="brand-owner">Daniel Musembi</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Professional virtual assistance, intelligent business workflow automation, web development, quantitative trading research, and online intelligence synthesis.
+          </p>
+          <div style="margin-top: 18px;">
+            <button id="downloadZipBtn" class="btn btn-secondary btn-sm" onclick="window.downloadGitHubPagesZip()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download GitHub Pages Package (.zip)
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="./virtual-assistant.html">Virtual Assistance</a></li>
+            <li><a href="./ai-automation.html">AI Automation</a></li>
+            <li><a href="./development.html">Web Development</a></li>
+            <li><a href="./trading-technology.html">Trading Technology</a></li>
+            <li><a href="./writing-research.html">Writing & Research</a></li>
+            <li><a href="./services.html">All Services Directory</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Portfolio & Insights</div>
+          <ul class="footer-links">
+            <li><a href="./projects.html">Projects Portfolio</a></li>
+            <li><a href="./blog.html">Articles & Guides</a></li>
+            <li><a href="./article-virtual-assistance.html">VA Scaling Guide</a></li>
+            <li><a href="./article-ai-workflows.html">AI Operations Guide</a></li>
+            <li><a href="./article-static-sites.html">Static Web Architecture</a></li>
+            <li><a href="./article-research.html">Investigative Research Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Contact & Trust</div>
+          <ul class="footer-links">
+            <li><a href="./about.html">About Daniel Musembi</a></li>
+            <li><a href="./contact.html">Send Inquiry</a></li>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./terms.html">Terms & Disclaimers</a></li>
+            <li><a href="mailto:musembidaniel615@gmail.com">musembidaniel615@gmail.com</a></li>
+            <li><span style="color: var(--text-muted); font-size: 0.8rem;">Nairobi, Kenya (UTC+3)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 DANSCOM. Founded by Daniel Musembi. Built for free GitHub Pages static deployment.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <a href="./privacy.html" style="color: inherit; text-decoration: none;">Privacy</a>
+          <a href="./terms.html" style="color: inherit; text-decoration: none;">Terms</a>
+          <a href="./sitemap.xml" style="color: inherit; text-decoration: none;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/projects.js"></script>
+  <script src="./assets/js/blog.js"></script>
+  <script src="./assets/js/zip-export.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.initProjectsUI) {
+        window.initProjectsUI('featuredProjectsGrid', true);
+      }
+      if (window.initBlogUI) {
+        window.initBlogUI('featuredBlogGrid', true);
+      }
+    });
+  </script>
+</body>
+</html>

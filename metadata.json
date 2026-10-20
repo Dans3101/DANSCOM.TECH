@@ -1,0 +1,6 @@
+{
+  "name": "DANSCOM - Daniel Musembi Portfolio & Digital Services",
+  "description": "Premium multi-page portfolio and digital services platform representing Daniel Musembi. Virtual assistance, AI automation workflows, web development, trading technology experiments, and online research.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

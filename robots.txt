@@ -1,0 +1,5 @@
+# Robots.txt for DANSCOM - Daniel Musembi Portfolio & Digital Services
+User-agent: *
+Allow: /
+
+Sitemap: https://danielmusembi.github.io/danscom-portfolio/sitemap.xml

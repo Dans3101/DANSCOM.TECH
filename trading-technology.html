@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Technology & Algorithmic Research — DANSCOM | Daniel Musembi</title>
+  <meta name="description" content="Technical research in quantitative trading logic, risk containment algorithms, Pine Script v5, MT5 integration concepts, and the DANSCOMFX prototype by Daniel Musembi.">
+  <meta name="keywords" content="DANSCOMFX, Trading Technology, Pine Script v5, MetaTrader 5, Deriv API, Algorithmic Trading, Risk Management, Quantitative Research, Daniel Musembi">
+  <meta name="author" content="Daniel Musembi">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danielmusembi.github.io/danscom-portfolio/trading-technology.html">
+  <meta property="og:title" content="Trading Technology & Algorithmic Research — DANSCOM">
+  <meta property="og:description" content="Educational prototypes, risk-management logic, and API integration research. Non-commercial, zero-guarantee technical portfolio.">
+  <meta property="og:image" content="./assets/icons/icon-512.svg">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg">
+  <meta name="theme-color" content="#080c14">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="./index.html" class="brand-link" aria-label="DANSCOM Home">
+        <span class="brand-badge">D</span>
+        <div class="brand-name">
+          <span class="brand-title">DANSCOM</span>
+          <span class="brand-owner">Daniel Musembi</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./trading-technology.html" class="active">Trading Tech</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm pwa-install-btn" style="display: none;" aria-label="Install App">Install</button>
+        <button class="btn-icon theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="btn-icon mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-backdrop"></div>
+    <div class="mobile-drawer-panel">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <span class="brand-badge">D</span>
+          <div class="brand-name">
+            <span class="brand-title">DANSCOM</span>
+            <span class="brand-owner">Daniel Musembi</span>
+          </div>
+        </div>
+        <button class="btn-icon mobile-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="drawer-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Daniel</a>
+        <a href="./services.html">All Services</a>
+        <a href="./virtual-assistant.html">Virtual Assistance</a>
+        <a href="./ai-automation.html">AI Automation</a>
+        <a href="./development.html">Web Development</a>
+        <a href="./trading-technology.html" class="active">Trading Technology</a>
+        <a href="./writing-research.html">Writing & Research</a>
+        <a href="./projects.html">Projects Portfolio</a>
+        <a href="./blog.html">Articles & Insights</a>
+        <a href="./contact.html">Contact / Hire</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="section" style="padding-top: 50px;">
+      <div class="container container-narrow">
+        <div style="margin-bottom: 20px;">
+          <a href="./services.html" class="card-link" style="font-size: 0.85rem;">&larr; Back to All Services</a>
+        </div>
+        <span class="badge badge-proto">Technical Research & Engineering</span>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-top: 12px; margin-bottom: 20px;">
+          Trading Technology & Quantitative Logic Research
+        </h1>
+        <p class="section-description" style="font-size: 1.15rem; line-height: 1.7; margin-bottom: 28px;">
+          Exploring algorithmic execution, systematic risk containment, and low-latency market data connectivity. A software engineering inquiry into disciplined financial technology.
+        </p>
+
+        <!-- Mandatory Financial Risk Disclaimer -->
+        <div class="risk-box">
+          <svg class="risk-box-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <div>
+            <div class="risk-box-title">Important Financial Risk & Non-Commercial Disclaimer</div>
+            <p class="risk-box-desc">
+              All trading technology tools, code snippets, indicators, and systems discussed here (including DANSCOMFX and the Deriv API bot) represent personal technical experiments, algorithmic prototypes, and educational research only. 
+              <strong>DANSCOM does not provide investment advice, does not solicit client funds, does not manage third-party capital, and never guarantees trading returns or profits.</strong> 
+              Trading in foreign exchange, synthetic indices, and derivatives carries substantial financial risk, and you can lose all invested capital. Never share broker passwords, private account credentials, or trade with money you cannot afford to lose.
+            </p>
+          </div>
+        </div>
+
+        <div class="article-content">
+          <h2>Core Research Areas & Projects</h2>
+
+          <!-- DANSCOMFX Spotlight -->
+          <div class="card" style="margin: 32px 0; border-color: var(--border-glow);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <span class="badge badge-proto">Internal Research Prototype</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">Pine Script v5 / MQL5</span>
+            </div>
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 10px;">DANSCOMFX Algorithmic Framework</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 18px;">
+              DANSCOMFX is an ongoing personal study into automated risk parity and systematic trend-following. Rather than attempting to predict price direction subjectively, the architecture enforces strict algorithmic discipline:
+            </p>
+            <ul style="font-size: 0.875rem; color: var(--text-secondary); margin-left: 20px; line-height: 1.8; margin-bottom: 18px;">
+              <li><strong>Strict Mathematical Position Sizing:</strong> Calculates lot sizes dynamically based on account equity and Average True Range (ATR) so that no individual position risks more than 1% of total portfolio equity.</li>
+              <li><strong>Circuit Breaker Drawdown Lockout:</strong> Enforces an automated lockout if daily losses reach 3%, terminating order generation to prevent emotional over-trading.</li>
+              <li><strong>Webhook Routing Architecture:</strong> Bridges TradingView alerts to MetaTrader 5 execution terminals via lightweight JSON webhooks.</li>
+            </ul>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">
+              Current Status: Forward paper testing on demo environment; evaluating execution latency and slippage behavior.
+            </div>
+          </div>
+
+          <!-- Deriv Bot Spotlight -->
+          <div class="card" style="margin: 32px 0;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <span class="badge badge-dev">Technical API Prototype</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">WebSockets / ES6+</span>
+            </div>
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 10px;">Deriv WebSocket Execution Prototype</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 18px;">
+              An experiment in event-driven software design connecting directly to the Deriv WebSocket API. Designed to test real-time tick streaming, continuous volatility measurement, and automated ping-pong reconnection logic under network drops.
+            </p>
+            <ul style="font-size: 0.875rem; color: var(--text-secondary); margin-left: 20px; line-height: 1.8; margin-bottom: 18px;">
+              <li><strong>Zero Credential Persistence:</strong> Token authentication handled purely in ephemeral memory; never stored in plaintext or logged.</li>
+              <li><strong>Tick Frequency Analysis:</strong> Aggregates 1-second price ticks into rolling statistical bands for mean-reversion evaluation.</li>
+              <li><strong>Fail-Safe Order Verification:</strong> Multi-stage handshake confirming order acceptance before clearing execution locks.</li>
+            </ul>
+          </div>
+
+          <h2>Algorithmic Disciplines Emphasized</h2>
+          <div class="cards-grid-2" style="margin: 28px 0;">
+            <div class="card" style="padding: 20px;">
+              <h4 style="font-size: 1rem; color: var(--accent-cyan); margin-bottom: 8px;">Risk Management Logic</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                Every algorithmic concept begins with loss prevention: trailing stops, break-even milestones, volatility-scaled risk sizing, and exposure caps across correlated instruments.
+              </p>
+            </div>
+            <div class="card" style="padding: 20px;">
+              <h4 style="font-size: 1rem; color: var(--accent-blue); margin-bottom: 8px;">Software Architecture</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                Modular scripts with decoupled signal generation, order validation, and logging layers. Emphasizing deterministic state machines over ad-hoc scripts.
+              </p>
+            </div>
+          </div>
+
+          <h2>Technical Collaboration Scope</h2>
+          <p>
+            I am available to assist quantitative traders, developers, and researchers with:
+          </p>
+          <ul>
+            <li>Converting manual trading rules into clean, well-commented Pine Script v5 code.</li>
+            <li>Setting up alert webhooks and webhook receiver microservices.</li>
+            <li>Constructing risk audit spreadsheets to mathematically evaluate strategy trade logs.</li>
+            <li>Building clean web-based dashboards for visualizing trade statistics.</li>
+          </ul>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; padding: 24px; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-card); align-items: center; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.2rem; margin: 0 0 6px;">Collaborate on Trading Technology</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">Inquire for custom Pine Script indicator scripting, data parsing, or dashboard prototypes.</p>
+            </div>
+            <a href="./contact.html?service=trading-technology" class="btn btn-primary btn-lg">Inquire on Technical Feasibility</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>&copy; 2026 DANSCOM. Daniel Musembi. Built for free GitHub Pages static hosting.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="./index.html" style="color: inherit; text-decoration: none;">Home</a>
+          <a href="./services.html" style="color: inherit; text-decoration: none;">All Services</a>
+          <a href="./terms.html" style="color: inherit; text-decoration: none;">Risk Disclaimers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
