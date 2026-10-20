@@ -54,8 +54,7 @@ Every file is an ordinary static asset with clean relative paths (`./`) so it wo
     │   ├── main.js                # Theme Toggle, Mobile Nav Drawer, PWA & Toast Engine
     │   ├── projects.js            # Projects Data Store, Filters & Modal Controller
     │   ├── blog.js                # Blog Engine, Client-side Search & Share Functions
-    │   ├── contact.js             # Form Validation & Mailto Generator
-    │   └── zip-export.js          # In-Browser 1-Click ZIP Packager for Deployment
+    │   └── contact.js             # Form Validation & Mailto Generator
     ├── icons/
     │   ├── favicon.svg            # High-Resolution Favicon
     │   ├── icon-192.svg           # PWA 192x192 SVG Icon
@@ -159,7 +158,6 @@ Open `assets/js/projects.js` to add your new projects, live demos, or GitHub rep
 - [x] **PWA Install & Offline:** Valid `manifest.webmanifest`, `service-worker.js`, and `offline.html` included.
 - [x] **Dark / Light Theme:** Accessible theme toggle with persistence in `localStorage`.
 - [x] **Zero Fabrication:** All credentials, criminological degree, prototypes, and disclaimers strictly honest.
-- [x] **One-Click Download:** Built-in "Download GitHub Pages Package (.zip)" button powered by JSZip.
 
 ---
 

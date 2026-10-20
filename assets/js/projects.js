@@ -58,17 +58,17 @@ window.DANSCOM_PROJECTS = [
   },
   {
     id: 'danscom-pwa-portfolio',
-    title: 'DANSCOM Static PWA Portfolio & Client Hub',
+    title: 'DANSCOM Digital Hub & Web Application',
     category: 'web',
     categoryLabel: 'Web Development',
     status: 'live',
     statusLabel: 'Live Website',
-    technologies: ['Pure HTML5', 'Vanilla CSS3', 'JavaScript ES6+', 'Service Workers', 'PWA Manifest'],
-    shortDesc: 'A ultra-fast, zero-dependency multi-page static portfolio engineered specifically for free GitHub Pages deployment with full offline PWA capabilities.',
-    longDesc: 'The very site you are viewing right now. Crafted to deliver sub-second page loads, zero runtime server costs, total GitHub Pages compatibility (both root and project subpaths), accessible semantic markup, dynamic client-side filtering, and resilient service worker offline caching.',
-    purpose: 'Demonstrate professional frontend engineering, zero-server operational security, and seamless client presentation.',
-    challenges: 'Ensuring relative asset linking across multi-tier GitHub Pages URLs and building accessible theme switching with zero layout shift.',
-    nextSteps: 'Adding automated GitHub Actions audit workflows for Lighthouse score tracking.',
+    technologies: ['HTML5', 'Modern CSS3', 'JavaScript (ES6+)', 'Service Workers', 'PWA Manifest'],
+    shortDesc: 'A high-performance, dark-first progressive web application and digital portfolio with offline capabilities and sub-second load times.',
+    longDesc: 'Engineered to deliver instant page loads, accessible semantic markup, dynamic client-side filtering, and resilient service worker offline caching. Features responsive navigation, theme persistence, and zero unnecessary dependencies.',
+    purpose: 'Deliver an uncompromisingly fast, accessible, and elegant digital portfolio and client portal.',
+    challenges: 'Designing smooth zero-layout-shift theme transitions and crafting offline-first service worker cache resilience.',
+    nextSteps: 'Expanding interactive client intake modules and continuous performance monitoring.',
     githubUrl: 'https://github.com/DanielMusembi',
     demoUrl: './index.html',
     featured: true
@@ -264,7 +264,7 @@ window.openProjectModal = function(id) {
       ${project.githubUrl ? `
         <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-          Repository Placeholder
+          View Source Code
         </a>
       ` : ''}
       <a href="./contact.html?service=${project.category}" class="btn btn-primary btn-sm">

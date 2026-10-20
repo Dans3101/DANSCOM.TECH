@@ -49,6 +49,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // WhatsApp Submission Handler
+  const whatsappSubmitBtn = document.getElementById('whatsappSubmitBtn');
+  if (whatsappSubmitBtn) {
+    whatsappSubmitBtn.addEventListener('click', () => {
+      const name = document.getElementById('fullName')?.value.trim();
+      const service = document.getElementById('serviceInterest')?.value || 'General Inquiry';
+      const budget = document.getElementById('budgetRange')?.value || '';
+      const message = document.getElementById('inquiryMessage')?.value.trim();
+
+      let text = `Hello Daniel,`;
+      if (name) {
+        text += ` my name is ${name}.`;
+      }
+      text += ` I am contacting you via DANSCOM regarding ${service}.`;
+      if (budget && budget !== 'Open for Discussion') {
+        text += ` Estimated scope: ${budget}.`;
+      }
+      if (message) {
+        text += `\n\nDetails: ${message}`;
+      } else {
+        text += `\n\nI would like to discuss working together.`;
+      }
+
+      const waNumber = '254713811622';
+      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+
+      showFeedback(
+        `Opening WhatsApp chat directly with Daniel Musembi (+254 713 811 622)...`,
+        'success',
+        waUrl
+      );
+
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 500);
+    });
+  }
+
   // Form Submission
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -62,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Basic client validation
       if (!name || !email || !message) {
-        showFeedback('Please fill in your name, email, and message.', 'error');
+        showFeedback('Please fill in your name, email, and message, or click "Send Message via WhatsApp" for instant contact.', 'error');
         return;
       }
 
@@ -81,13 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
         `Service Area: ${service || 'Unspecified'}\n` +
         `Estimated Budget / Setup: ${budget || 'To be discussed'}\n\n` +
         `Project / Inquiry Details:\n${message}\n\n` +
-        `--\nSent from DANSCOM Web Portfolio`
+        `--\nSent from DANSCOM Portfolio`
       );
 
       const mailtoUrl = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
 
       showFeedback(
-        `Generating your email dispatch... A pre-composed email will open in your default mail app addressed to <strong>${ownerEmail}</strong>. If your mail client does not open automatically, please click below or email directly.`,
+        `Your message is ready. Opening your email app addressed to <strong>${ownerEmail}</strong>. If your email app does not open automatically, please click below.`,
         'success',
         mailtoUrl
       );
@@ -118,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="font-size: 0.9rem; line-height: 1.6;">
           <p>${text}</p>
           ${directLink ? `
-            <div style="margin-top: 12px;">
-              <a href="${directLink}" class="btn btn-primary btn-sm">Click Here to Open Email Client</a>
+            <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="${directLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Proceed to Message</a>
             </div>
           ` : ''}
         </div>

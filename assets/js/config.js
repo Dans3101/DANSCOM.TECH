@@ -20,11 +20,12 @@ window.DANSCOM_CONFIG = {
   },
   contact: {
     email: 'musembidaniel615@gmail.com',
-    phonePlaceholder: '+254 7XX XXX XXX', // Replace with verified number when ready
-    whatsappPlaceholder: 'https://wa.me/254700000000', // Update with actual number if desired
+    phone: '+254 713 811 622',
+    whatsapp: 'https://wa.me/254713811622',
+    whatsappDirectUrl: 'https://wa.me/254713811622?text=Hello%20Daniel,%20I%20am%20reaching%20out%20via%20your%20DANSCOM%20portfolio.',
     availableFor: 'Long-term Virtual Assistance, AI Automation, Web Projects, Technical Research',
     workingHours: 'Monday – Friday, 8:00 AM – 6:00 PM EAT (Flexible for International Timezones)',
-    responseTime: 'Within 12–24 business hours',
+    responseTime: 'Within 12–24 business hours (Instant via WhatsApp)',
   },
   socials: {
     github: 'https://github.com/DanielMusembi', // Replace with verified handle if different
