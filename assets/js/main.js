@@ -293,11 +293,21 @@
       btn.addEventListener('click', toggleTheme);
     });
 
-    // Close modals on clicking overlay backdrop
+    // Close modals on clicking overlay backdrop or pressing Escape
     document.addEventListener('click', (e) => {
       if (e.target.classList && e.target.classList.contains('modal-overlay')) {
         e.target.classList.remove('active');
         document.body.style.overflow = '';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal-overlay.active');
+        if (activeModal) {
+          activeModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
       }
     });
   });

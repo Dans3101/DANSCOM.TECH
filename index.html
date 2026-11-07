@@ -78,7 +78,7 @@
         <a href="./index.html" class="active">Home</a>
         <a href="./about.html">About</a>
         <a href="./services.html">Services</a>
-        <a href="./projects.html">Projects</a>
+        <a href="./projects.html">Portfolio & Samples</a>
         <a href="./trading-technology.html">Trading Tech</a>
         <a href="./blog.html">Blog</a>
         <a href="./contact.html">Contact</a>
@@ -127,7 +127,7 @@
         <a href="./development.html">Web Development</a>
         <a href="./trading-technology.html">Trading Technology</a>
         <a href="./writing-research.html">Writing & Research</a>
-        <a href="./projects.html">Projects Portfolio</a>
+        <a href="./projects.html">Portfolio & Work Samples</a>
         <a href="./blog.html">Articles & Insights</a>
         <a href="./contact.html">Contact / Hire</a>
       </nav>
@@ -180,7 +180,7 @@
               Send Inquiry
             </a>
             <a href="./services.html" class="btn btn-secondary btn-lg">Explore Services</a>
-            <a href="./projects.html" class="btn btn-outline btn-lg">View Projects</a>
+            <a href="./projects.html" class="btn btn-outline btn-lg">View Work Samples</a>
           </div>
 
           <div class="hero-meta">
@@ -381,18 +381,33 @@
       </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="section" style="background: var(--bg-secondary);">
+    <!-- Featured Portfolio & Work Samples Section -->
+    <section class="section" id="portfolio" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
           <div>
-            <div class="section-subtitle">Verified Work & Experiments</div>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description" style="max-width: 600px;">
-              Live websites, algorithmic trading prototypes, and automation architectures. Clearly marked statuses with no fabricated metrics.
+            <div class="section-subtitle" style="color: var(--accent-gold);">Portfolio Demonstration Samples</div>
+            <h2 class="section-title">Verified Work Samples & Deliverables</h2>
+            <p class="section-description" style="max-width: 680px;">
+              Inspect realistic demonstration projects covering B2B Lead Generation, Virtual Operations, Business Intelligence, Provider Verification, CRM Data Hygiene, and AI Automations. Click <strong>View Sample Work</strong> on any sample to inspect live data tables and workflows.
             </p>
           </div>
-          <a href="./projects.html" class="btn btn-secondary">Browse All Projects &rarr;</a>
+          <div style="display: flex; gap: 10px;">
+            <a href="./projects.html" class="btn btn-gold">Explore All Work Samples &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Reassuring Confidentiality Notice -->
+        <div class="confidentiality-banner">
+          <svg class="confidentiality-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div>
+            <div class="confidentiality-title">
+              Client Confidentiality & Demonstration Policy
+            </div>
+            <p class="confidentiality-desc">
+              Demonstration projects utilize realistic mock benchmarks engineered by Daniel Musembi to showcase data validation, CRM hygiene, and deliverable quality without compromising client privacy or proprietary contracts.
+            </p>
+          </div>
         </div>
 
         <div id="featuredProjectsGrid" class="cards-grid">
@@ -470,7 +485,7 @@
 
     <!-- Project Detail Modal -->
     <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project Details">
-      <div class="modal-box">
+      <div class="modal-box modal-box-wide">
         <button class="modal-close" onclick="window.closeProjectModal()" aria-label="Close modal">&times;</button>
         <div id="projectModalBody"></div>
       </div>

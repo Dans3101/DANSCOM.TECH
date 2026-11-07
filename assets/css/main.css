@@ -28,10 +28,21 @@
   --accent-gradient: linear-gradient(135deg, #00f0ff 0%, #38bdf8 50%, #6366f1 100%);
   --accent-glow: 0 0 25px rgba(56, 189, 248, 0.25);
 
+  /* DANSCOM Luxury Black & Gold Branding Tokens */
+  --accent-gold: #d4af37;
+  --accent-gold-light: #f5e7a9;
+  --accent-gold-dark: #aa820a;
+  --accent-gold-glow: 0 0 25px rgba(212, 175, 55, 0.32);
+  --border-gold: rgba(212, 175, 55, 0.38);
+  --border-gold-subtle: rgba(212, 175, 55, 0.18);
+  --gradient-gold: linear-gradient(135deg, #f5e7a9 0%, #d4af37 50%, #b89125 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(14, 21, 36, 0.95) 100%);
+
   --status-live: #10b981;
   --status-proto: #f59e0b;
   --status-dev: #38bdf8;
   --status-concept: #a855f7;
+  --status-gold: #d4af37;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -71,6 +82,15 @@
   --accent-indigo: #4f46e5;
   --accent-gradient: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%);
   --accent-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+
+  --accent-gold: #b89125;
+  --accent-gold-light: #d4af37;
+  --accent-gold-dark: #8c690f;
+  --accent-gold-glow: 0 0 20px rgba(184, 145, 37, 0.2);
+  --border-gold: rgba(184, 145, 37, 0.35);
+  --border-gold-subtle: rgba(184, 145, 37, 0.15);
+  --gradient-gold: linear-gradient(135deg, #d4af37 0%, #b89125 50%, #8c690f 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(248, 250, 252, 0.95) 100%);
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -179,12 +199,13 @@ body {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: var(--accent-gradient);
-  color: #0b0f19;
+  background: var(--gradient-gold);
+  color: #080c14;
   font-weight: 900;
   border-radius: var(--radius-sm);
-  font-size: 1rem;
-  box-shadow: var(--accent-glow);
+  font-size: 1.05rem;
+  box-shadow: 0 2px 12px rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .brand-name {
@@ -353,6 +374,21 @@ body {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
+.btn-gold {
+  background: var(--gradient-gold);
+  color: #080c14 !important;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.32);
+}
+
+.btn-gold:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.48);
+}
+
+
 .floating-whatsapp {
   position: fixed;
   bottom: 84px;
@@ -436,6 +472,25 @@ body {
   background: rgba(168, 85, 247, 0.12);
   color: var(--status-concept);
   border-color: rgba(168, 85, 247, 0.3);
+}
+
+.badge-gold,
+.badge-demo {
+  background: rgba(212, 175, 55, 0.14);
+  color: var(--accent-gold);
+  border: 1px solid var(--border-gold);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.badge-demo::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  box-shadow: 0 0 8px var(--accent-gold);
 }
 
 /* Hero Section */
@@ -1067,7 +1122,410 @@ body {
   color: var(--text-muted);
   cursor: pointer;
   padding: 6px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
 }
+
+.modal-close:hover {
+  color: var(--text-primary);
+  background: var(--bg-surface);
+}
+
+.modal-box.modal-box-wide {
+  max-width: 980px;
+  width: 95%;
+  padding: 32px 36px;
+}
+
+@media (max-width: 768px) {
+  .modal-box.modal-box-wide {
+    padding: 24px 18px;
+    width: 96%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio & Demonstration Work Samples System
+   ========================================================================== */
+
+/* Confidentiality & Demonstration Notice Banner */
+.confidentiality-banner {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(14, 21, 36, 0.95) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 18px 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.confidentiality-icon {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.confidentiality-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-gold-light);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.confidentiality-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Project Card Visual Preview Graphic Header */
+.card-preview-header {
+  position: relative;
+  background: #060910;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  margin: -6px -6px 16px -6px;
+  overflow: hidden;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-preview-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-gold);
+  opacity: 0.8;
+}
+
+.card-preview-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.card-preview-mockup {
+  background: rgba(14, 21, 36, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  color: var(--text-secondary);
+}
+
+.card-preview-mockup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.card-preview-mockup-row:last-child {
+  border-bottom: none;
+}
+
+/* Deliverables Checklist on Card */
+.deliverables-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.deliverables-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.deliverables-checklist svg {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+}
+
+/* Sample KPI Mini Grid */
+.sample-kpi-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.sample-kpi-pill {
+  background: rgba(14, 21, 36, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.sample-kpi-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent-gold-light);
+  line-height: 1.2;
+}
+
+.sample-kpi-lbl {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+/* Modal Tab Navigation */
+.sample-tabs-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.sample-tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.sample-tab-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-surface);
+}
+
+.sample-tab-btn.active {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: var(--border-gold);
+  color: var(--accent-gold-light);
+}
+
+.sample-tab-panel {
+  display: none;
+}
+
+.sample-tab-panel.active {
+  display: block;
+  animation: fadeIn 200ms ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Interactive Data Table in Modal */
+.table-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.table-search-input {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  color: var(--text-primary);
+  font-size: 0.825rem;
+  width: 220px;
+}
+
+.table-search-input:focus {
+  border-color: var(--accent-gold);
+  outline: none;
+}
+
+.sample-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  background: #060910;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sample-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.825rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.sample-table th {
+  background: #0d1424;
+  color: var(--accent-gold-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.725rem;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-gold-subtle);
+  position: sticky;
+  top: 0;
+}
+
+.sample-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+}
+
+.sample-table tr:hover td {
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.table-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.table-badge-verified {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.table-badge-tier1 {
+  background: rgba(212, 175, 55, 0.18);
+  color: var(--accent-gold);
+  border: 1px solid var(--border-gold);
+}
+
+.table-badge-pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.table-badge-active {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+/* Automation Workflow Diagram Nodes */
+.workflow-nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.workflow-node-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.workflow-node-card.active-step {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.2);
+}
+
+.workflow-node-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.workflow-node-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.workflow-node-desc {
+  font-size: 0.775rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* Interactive Simulation Panel for AI Automation */
+.sim-panel {
+  background: #080c14;
+  border: 1px solid var(--border-gold-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.sim-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sim-code-box {
+  background: #030508;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #38bdf8;
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
 
 .modal-close:hover {
   color: var(--text-primary);
